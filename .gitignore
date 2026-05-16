@@ -1,81 +1,74 @@
-# Byte-compiled / optimized / DLL files
+# ====== Python ======
 __pycache__/
 *.py[cod]
-/.venv
-/.pytest_cache
-
-# C extensions
+*$py.class
 *.so
 
 # Distribution / packaging
 .Python
-env/
-bin/
 build/
 develop-eggs/
 dist/
+downloads/
 eggs/
+.eggs/
+lib/
 lib64/
 parts/
 sdist/
 var/
+wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-*.eggs
+MANIFEST
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
+# Unit test / coverage
 htmlcov/
 .tox/
+.nox/
 .coverage
+.coverage.*
 .cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 nosetests.xml
 coverage.xml
+*.cover
 
-# Translations
-*.mo
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
 
-# Pycharm
-.idea
-
-# Eclipse
-.settings
-
-# Visual Studio cache/options directory
-.vs/
-.vscode
-
-# OSX Files
-.DS_Store
-
-# Django stuff:
-*.log
-
-# Mr Developer
-.mr.developer.cfg
-.project
-.pydevproject
-
-# Rope
-.ropeproject
-
-# Sphinx documentation
-docs/_build/
-
-# Backup files
-*~
+# ====== IDE / Editor ======
+.vscode/
+.idea/
 *.swp
+*.swo
+*~
 
-# OCA rules
-!static/lib/
+# ====== OS ======
+.DS_Store
+Thumbs.db
+desktop.ini
 
-.ruff_cache
-.claudesync
-llm_thread/gptree_output.txt
-**/.gptree_config
-**/gptree_output.txt
-odoo-docs-maintenance-swarm.yml
+# ====== Odoo-specific ======
+*.log
+.odoorc
+
+# Owncloud sync (legacy)
+.owncloudsync.log
+.owncloudsync.log.*
+.sync_journal.*
+
+# Stash files (never commit module zips)
+*.zip
+
+# Secrets
+.env
+.env.local
